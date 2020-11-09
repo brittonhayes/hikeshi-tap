@@ -2,16 +2,16 @@
 class Hikeshi < Formula
   desc "Hikeshi is a security incident response application that keeps documenting incidents simple, so you can focus on fighting fires."
   homepage "https://github.com/brittonhayes/hikeshi"
-  version "0.0.9"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brittonhayes/hikeshi/releases/v0.0.9/hikeshi_0.0.9_darwin_amd64.tar.gz"
-    sha256 "0925063a528ed35ffe705eea691cff0012a6650284c7e4bd89f8059532715477"
+    url "https://github.com/brittonhayes/hikeshi/releases/v0.1.4/hikeshi_0.1.4_darwin_amd64.tar.gz"
+    sha256 "d48b5d8dfa09c396af9e295d73575dba722156398954bf9c3652d5377bae8db7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/brittonhayes/hikeshi/releases/v0.0.9/hikeshi_0.0.9_linux_amd64.tar.gz"
-      sha256 "b7729c727b4a6232d5c07ac65e23ce564a67c334c4034d64a28514f638c16828"
+      url "https://github.com/brittonhayes/hikeshi/releases/v0.1.4/hikeshi_0.1.4_linux_amd64.tar.gz"
+      sha256 "b4ff9ced00603e1cbe75df5dde51e1a052d023193d2d838e1dc92681b860e537"
     end
   end
   
