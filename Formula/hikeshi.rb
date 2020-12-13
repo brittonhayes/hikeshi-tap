@@ -2,19 +2,18 @@
 class Hikeshi < Formula
   desc "Hikeshi is a security incident response application that keeps documenting incidents simple, so you can focus on fighting fires."
   homepage "https://github.com/brittonhayes/hikeshi"
-  version "0.1.4"
+  version "0.1.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/brittonhayes/hikeshi/releases/v0.1.4/hikeshi_0.1.4_darwin_amd64.tar.gz"
-    sha256 "d48b5d8dfa09c396af9e295d73575dba722156398954bf9c3652d5377bae8db7"
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/brittonhayes/hikeshi/releases/v0.1.4/hikeshi_0.1.4_linux_amd64.tar.gz"
-      sha256 "b4ff9ced00603e1cbe75df5dde51e1a052d023193d2d838e1dc92681b860e537"
-    end
+    url "https://github.com/brittonhayes/hikeshi/releases/v0.1.5/hikeshi_0.1.5_darwin_amd64.tar.gz"
+    sha256 "5e7fbb824b65929fbbb84d819fe0a45adde35086f3ffe562de0773a7454566a2"
   end
-  
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/brittonhayes/hikeshi/releases/v0.1.5/hikeshi_0.1.5_linux_amd64.tar.gz"
+    sha256 "35363ca6c37af772b591b48a36691ff6b6611458e2fcca9fd20920177a2dabfe"
+  end
+
   depends_on "git"
   depends_on "zsh" => :optional
 
